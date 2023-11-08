@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control servo</title>
+</head>
+<body>
+  <h1>Control de Servo</h1>
+    <button onclick="moverServo()">Mover Servo 90°</button>
+
+    <script>
+      function moverServo() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "/servo90", true);
+        xhttp.send();
+      }
+    </script>
+</body>
+</html>

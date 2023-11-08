@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Control de Servo</title>
-</head>
-<body>
-  <h1>Control de Servo</h1>
-  <button onclick="moveServo()">Mover Servo</button>
-  
-  <script>
-    function moveServo() {
-      // Realiza una solicitud GET al servidor Arduino para mover el servo
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "/move", true);
-      xhr.send();
-    }
-  </script>
-</body>
+  <body>
+    <h1>Control de Servo</h1>
+    <button onclick="moverServo()">Mover Servo 90°</button>
+
+    <script>
+      function moverServo() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "/servo90", true);
+        xhttp.send();
+      }
+    </script>
+  </body>
 </html>
